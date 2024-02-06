@@ -4,9 +4,11 @@ const originalMatrix = [
     [4, 5, 6],
     [7, 9, 8]
   ];
-  
+
+//console.log('Original Matrix (modified):', originalMatrix);
+
   const newMatrix = originalMatrix.map((row) => {
-    return row.sort();
+    return Array.from(row).sort();
   });
   
   // Modifying the original matrix (changing the last element of the first row)
